@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the aside box with Flexbox */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c4c4f1;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    margin: 0; /* Remove default margin */
+}
+
+.aside-box {
+    width: 300px;
+    background-color: #2c2c3a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    color: #c4c4c4;
+    text-align: center; /* Center text inside the aside box */
+}
+
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #4a4a5d; /* Light border around image */
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 15px 0 5px;
+}
+
+p {
+    text-align: center;
+    color: #b3b3c9;
+    font-size: 0.9em;
+}
+
+/* Email and Birthday section */
+.email-content {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.email-content i {
+    color: #ffc107; /* Icon color */
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.email-content p:first-child {
+    font-weight: bold;
+    font-size: 0.85em;
+    margin-right: 10px;
+}
+
+.email-content p:last-child {
+    font-size: 0.9em;
+    color: #c4c4c4;
+}
+
+/* Social media icons */
+.media-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.media-links i {
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.media-links i:hover {
+    color: #ffc107; /* Hover color for social icons */
+    cursor: pointer;
+}
+
+.email{
+    display:flex
+}
+.birthday{
+    display: flex;
+}
