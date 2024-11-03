@@ -1,101 +1,132 @@
-
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Centering the aside box with Flexbox */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #c4c4f1;
+    background-color: #0a0a0a;
     color: #fff;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    margin: 0; /* Remove default margin */
-}
-
-.aside-box {
-    width: 300px;
-    background-color: #2c2c3a;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    color: #c4c4c4;
-    text-align: center; /* Center text inside the aside box */
-}
-
-.profile-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-    border: 2px solid #4a4a5d; /* Light border around image */
-}
-
-h3 {
-    text-align: center;
-    font-size: 1.5em;
-    color: #ffffff;
-    margin: 15px 0 5px;
-}
-
-p {
-    text-align: center;
-    color: #b3b3c9;
-    font-size: 0.9em;
-}
-
-/* Email and Birthday section */
-.email-content {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-    color: #ffffff;
-}
-
-.email-content i {
-    color: #ffc107; /* Icon color */
-    font-size: 1.5em;
-    margin-right: 10px;
-}
-
-.email-content p:first-child {
-    font-weight: bold;
-    font-size: 0.85em;
-    margin-right: 10px;
-}
-
-.email-content p:last-child {
-    font-size: 0.9em;
-    color: #c4c4c4;
-}
-
-/* Social media icons */
-.media-links {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 300px;
+    background-color: #151515;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Avatar styling */
+.avatar-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.avatar-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: scale(1.2);}
+
+/* Name and title */
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.title {
+    background-color: #333;
+    color: #aaa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Contacts list */
+.contacts-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    width: 35px;
+    height: 35px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.icon-box ion-icon, .icon-box i {
+    color: #f9c34f; /* Yellow icon color */
+    font-size: 1.2rem;
+}
+
+.contact-title {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.contact-info a, .contact-info time {
+    font-size: 0.9rem;
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Separator */
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+/* Social media links */
+.media-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.media-links div {
+    background-color: #222;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .media-links i {
-    color: #ffffff;
-    font-size: 1.2em;
+    color: #fff;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .media-links i:hover {
-    color: #ffc107; /* Hover color for social icons */
-    cursor: pointer;
-}
-
-.email{
-    display:flex
-}
-.birthday{
-    display: flex;
+    color: #f9c34f; /* Hover color for social media icons */
 }
