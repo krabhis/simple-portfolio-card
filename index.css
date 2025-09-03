@@ -155,10 +155,7 @@ body {
   color: #f9c34f;
 }
 
-/* -----------------------------------
-   📱 Mobile Screens (max-width: 600px)
-   Make things smaller
------------------------------------ */
+
 @media (max-width: 600px) {
   .sidebar {
     width: 90%;
@@ -201,10 +198,7 @@ body {
   }
 }
 
-/* -----------------------------------
-   💻 Large Screens (min-width: 1200px)
-   Center content neatly
------------------------------------ */
+
 @media (min-width: 1200px) {
   body {
     justify-content: center;
